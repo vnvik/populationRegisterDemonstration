@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8 ">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" th:href="@{/css/custom/getDataRN.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/custom/global.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/custom/navbar.css}"/>
+    <link rel="stylesheet" th:href="@{/css/lib/bootstrap337.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/lib/cdndatatables11019.css}"/>
+    <link rel="stylesheet" th:href="@{/css/lib/jqueryui1121.css}"/>
+    <title>Регистр населения</title>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Регистр населения</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li th:if="${isAdmin}"><a th:href="@{/admin/users}">Админ</a></li>
+            <li class="active"><a th:href="@{/getDataRN}">Получение данных из РН</a></li>
+            <li><a th:href="@{/sendDataRN}">Отправка данных в РН</a></li>
+            <li><a th:href="@{/logout}">Выход</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<section class="pageSection">
+    <div class="block1">
+
+
+        <div class="panel panel-default custom-panel">
+            <div class="panel-heading custom-panel">
+                Получение данных из РН
+            </div>
+        </div>
+
+
+        <div id="formIdentif" class="form-group row">
+            <label for="identif" class="col-sm-2 labelC">Идентификационный номер:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-input"
+                       id="identif"
+                       autocomplete="off" placeholder="Введите идентификатор">
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <input id="btnGetDataRN" type="submit" class="btn btn-success" value="Получить данные о лице"/>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="pageSection sectionHide" style="display: none">
+    <div class="block1">
+
+
+        <div class="panel panel-default custom-panel">
+            <div class="panel-heading custom-panel">
+                Данные по запросу
+            </div>
+        </div>
+
+
+        <div id="answer" class="form-group row">
+
+            <div class="tableAnswer">
+                <table id="tableAnswer" class="table table-striped table-bordered" style="width:100%">
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!--<div class="mainPageDiv">-->
+
+<!--<button id="but" type="button">НАЖАТЬ</button>-->
+<!--</div>-->
+<object id="oavcmx" type="application/x-avcmx-web-plugin" width="0" height="0"></object>
+
+<script type="text/javascript" th:src="@{/js/lib/avest115.js}"></script>
+<script type="text/javascript" th:src="@{/js/lib/ecp.js}"></script>
+<script type="text/javascript" th:src="@{/js/lib/jquery331.js}"></script>
+<script type="text/javascript" th:src="@{/js/lib/jqueryDataTables.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/lib/moment2240.js}"></script>
+<script type="text/javascript" th:src="@{/js/lib/momentLocale2240.js}"></script>
+<script type="text/javascript" th:src="@{/js/custom/getDataRN.js}"></script>
+
+</body>
+</html>

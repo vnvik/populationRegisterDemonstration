@@ -1,0 +1,93 @@
+{
+  "cover": {
+    "message_id": "{CC135E40-BBEC-4CDD-96BE-D437F8C7899F}",
+    "message_type": {
+      "code": "-2",
+      "type": 300
+    },
+    "message_time": "2021-01-16 00:18:21",
+    "message_source": {
+      "code": "17120",
+      "type": 80
+    },
+    "parent_message_id": "4D7961DF-3057-4587-A498-5D995C733D80",
+    "dataset": [
+      7
+    ],
+    "agreement": {
+      "target": "верификация персональных данных",
+      "rights": [
+        201,
+        703,
+        208,
+        480,
+        481,
+        482,
+        490,
+        491,
+        527,
+        528,
+        252,
+        465,
+        466,
+        516,
+        517
+      ],
+      "operator_info": "НКФО ЕРИП ул. Толстого,д. 6",
+      "issue_date": "2019-12-07 13:22:09",
+      "expiry_date": "2023-12-07 13:22:09"
+    }
+  },
+  "response": {
+    "personal_data": [
+      {
+        "request_id": "реб1",
+        "data": {
+          "identif": "4220466H095PB7",
+          "last_name": "КЛЕЩЕНКО",
+          "last_name_bel": "КЛЕШЧАНКА",
+          "last_name_lat": "KLESHCHANKA",
+          "name": "ГАЛИНА",
+          "name_bel": "ГАЛІНА",
+          "name_lat": "HALINA",
+          "patronymic": "НИКОЛАЕВНА",
+          "patronymic_bel": "МІКАЛАЕЎНА",
+          "birth_place": {},
+          "address": {
+            "access": {
+              "code": "10",
+              "type": -3,
+              "lexema": {
+                "value": [
+                  {
+                    "value": "ОТКРЫТАЯ ГРУППА ИНФОРМАЦИИ",
+                    "lang": "ru"
+                  }
+                ]
+              }
+            },
+            "active": true,
+            "sign_away": false
+          },
+          "documents": [
+            {
+              "access": {
+                "code": "10",
+                "type": -3,
+                "lexema": {
+                  "value": [
+                    {
+                      "value": "ОТКРЫТАЯ ГРУППА ИНФОРМАЦИИ",
+                      "lang": "ru"
+                    }
+                  ]
+                }
+              },
+              "active": true
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

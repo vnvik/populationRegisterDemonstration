@@ -1,0 +1,10 @@
+body {
+    background: #f1f4f7 !important;
+}
+
+.pageSection {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /*justify-content: center;*/
+}

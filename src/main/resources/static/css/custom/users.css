@@ -1,0 +1,32 @@
+.tableInSection {
+    width: 90%;
+    margin: 110px auto 50px auto;
+}
+
+#registration {
+    display: flex;
+    margin: 60px auto 50px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.75);
+}
+
+
+.block1, .block2 {
+    background: white;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.custom-panel {
+    border-radius: 10px 10px 0px 0px !important;
+}
+
+
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}

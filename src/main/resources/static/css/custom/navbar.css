@@ -1,0 +1,13 @@
+.navbar-right {
+    margin-right: 0px !important;
+}
+
+.nav li {
+    margin-left: 10px;
+    font-size: initial;
+}
+
+.nav li:hover {
+    background: #080808;
+    border-radius: 2px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8 ">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" th:href="@{/css/custom/sendDataRN.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/custom/navbar.css}"/>
+    <link rel="stylesheet" th:href="@{/css/lib/bootstrap337.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/lib/cdndatatables11019.css}"/>
+    <link rel="stylesheet" th:href="@{/css/lib/jqueryui1121.css}"/>
+    <title>Регистр населения</title>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Регистр населения</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li th:if="${isAdmin}"><a th:href="@{/admin/users}">Админ</a></li>
+            <li ><a th:href="@{/getDataRN}">Получение данных из РН</a></li>
+            <li class="active"><a th:href="@{/sendDataRN}">Отправка данных в РН</a></li>
+            <li><a th:href="@{/logout}">Выход</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+
+<div class="mainPageDiv">
+
+    <button id="but" type="button">НАЖАТЬ</button>
+</div>
+<object id="oavcmx" type="application/x-avcmx-web-plugin" width="0" height="0"></object>
+
+
+<script type="text/javascript" th:src="@{/js/lib/avest115.js}"></script>
+<script type="text/javascript" th:src="@{/js/lib/ecp.js}"></script>
+<script type="text/javascript" th:src="@{/js/lib/jquery331.js}"></script>
+<script type="text/javascript" th:src="@{/js/lib/jqueryDataTables.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/lib/moment2240.js}"></script>
+<script type="text/javascript" th:src="@{/js/lib/momentLocale2240.js}"></script>
+
+
+</body>
+</html>
